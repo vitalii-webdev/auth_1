@@ -30,5 +30,6 @@ MongoClient.connect(url, (err, db) => {
   db.collection("Cars").findOne({ year: "2000" }, (err, doc) => {
     console.log(doc);
   });
+
   db.close();
 });
